@@ -1,0 +1,13 @@
+{
+  "icon_theme": "Zed (Default)",
+  "ui_font_size": 12,
+  "buffer_font_size": 12,
+  "theme": {
+    "mode": "dark",
+    "light": "macOS Classic Dark",
+    "dark": "macOS Classic Dark"
+  },
+  "features": {
+    "edit_prediction_provider": "none"
+  }
+}

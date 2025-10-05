@@ -1,0 +1,67 @@
+configuration {
+  modi: "drun";
+  display-drun: "";
+  drun-display-format: "{name}";
+  font: "Inter 13";
+}
+
+@theme "/dev/null"
+
+* {
+  bg: #1a1a1a;
+  fg: #ffffff;
+  alt: #2a2a2a;
+  rad: 8px;
+  background-color: @bg;
+  text-color: @fg;
+}
+
+window {
+  width: 20%;
+  border-radius: @rad;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    padding: 20px;
+    spacing: 20px;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    border-radius: @rad;
+    background-color: @alt;
+}
+
+prompt, entry, element selected {
+    vertical-align: 0.5;
+    background-color: @alt;
+}
+
+prompt {
+   padding: 1.5% 0.5%;
+}
+
+entry {
+    placeholder: "Поиск...";
+    placeholder-color: grey;
+}
+
+listview {
+    layout: vertical;
+    lines: 5;
+    columns: 2;
+    cycle: false;
+}
+
+element {
+    orientation: horizontal;
+    padding: 15px;
+    spacing: 1em;
+    border-radius: @rad;
+}
+
+element-text, element-icon {
+    vertical-align: 0.5;
+    background-color: inherit;
+}
