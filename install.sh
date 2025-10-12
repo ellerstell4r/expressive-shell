@@ -53,7 +53,7 @@ else
 fi
 if [[ -d ./scripts ]]; then
     info "Копирую скрипты в ~..."
-    cp -rfv ./scripts/* ~/
+    cp -rfv ./scripts/.bashrc ./scripts/.xinitrc ./scripts/.Xresources ~/
     success "Скрипты установлены."
 else
     warn "Папка scripts не найдена."
